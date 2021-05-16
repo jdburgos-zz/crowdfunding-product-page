@@ -1,8 +1,11 @@
+/** Components **/
+import Header from './components/Header/Header';
+
 /** Styles **/
 import './styles/styles.scss';
 
 const App = () => (
-  <div>App</div>
+  <div><Header /></div>
 );
 
 export default App;
