@@ -1,0 +1,65 @@
+@import "src/styles/settings/variables";
+
+.description {
+  transform: translateY(-60px);
+
+  &__logo {
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: -27px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1.8em 0 .67em;
+  }
+
+  &__content {
+    text-align: center;
+    color: var(--c-dark-gray);
+    font-size: .9rem;
+    line-height: 1.5;
+    margin: 1em 0 1.8em;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__bookmark {
+    $bookmark: &;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    max-width: 177px;
+
+    &.active {
+      #{$bookmark}-text {
+        color: var(--c-dark-cyan);
+      }
+    }
+
+    &-img {
+      z-index: 10;
+    }
+
+    &-text {
+      display: none;
+
+      @media only screen and (min-width: $b-medium) {
+        display: block;
+        border-radius: 30px;
+        padding: 20px 30px 20px 70px;
+        color: var(--c-dark-gray);
+        font-weight: 700;
+        background-color: var(--c-lighten-gray);
+        transform: translateX(-58px);
+      }
+    }
+  }
+}

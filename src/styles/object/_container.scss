@@ -1,0 +1,8 @@
+.container {
+  width: calc(100% - 50px);
+  margin: 0 auto;
+
+  @media only screen and (min-width: $b-medium) {
+    max-width: 650px;
+  }
+}
