@@ -14,6 +14,10 @@
     border: 1px solid var(--c-light-gray);
   }
 
+  &--type-2 {
+    padding: 30px 20px;
+  }
+
   @media only screen and (min-width: $b-medium) {
     padding: 30px 40px 40px;
   }

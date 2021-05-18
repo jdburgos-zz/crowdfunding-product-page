@@ -1,0 +1,65 @@
+@import "src/styles/settings/variables";
+
+.product {
+  margin-bottom: 25px;
+
+  &--disable {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__header {
+    @media only screen and (min-width: $b-medium) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    font-size: .9rem;
+    margin-bottom: .8em;
+  }
+
+  &__price {
+    color: var(--c-modarate-cyan);
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    color: var(--c-dark-gray);
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  &__footer {
+    @media only screen and (min-width: $b-medium) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__quantity {
+    color: var(--c-dark-gray);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    line-height: .8;
+
+    &-number {
+      font-weight: 700;
+      color: var(--c-black);
+      font-size: 2rem;
+      margin-right: 10px;
+    }
+
+    @media only screen and (min-width: $b-medium) {
+      margin-bottom: 0;
+    }
+  }
+}
