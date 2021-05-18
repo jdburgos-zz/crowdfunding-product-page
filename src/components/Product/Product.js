@@ -21,7 +21,7 @@ const Product = (props) => {
         <div className={styles['product__description']}>{description}</div>
         <div className={styles['product__footer']}>
           <div className={styles['product__quantity']}><span className={styles['product__quantity-number']}>{quantity}</span> left</div>
-          <Button disable={disable}>{btnText}</Button>
+          <Button onClick={props.onClick.bind(null, props.item)} disable={disable}>{btnText}</Button>
         </div>
       </Card>
     </div>

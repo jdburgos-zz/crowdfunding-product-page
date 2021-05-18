@@ -1,3 +1,6 @@
+/** React core **/
+
+import { useState } from 'react';
 /** Components **/
 import Product from '../Product/Product';
 import Wrapper from '../helpers/Wrapper/Wrapper';
@@ -28,11 +31,15 @@ const PRODUCTS = [
 ];
 
 const Products = () => {
-  const products = PRODUCTS.map((item, index) => <Product key={index} item={item} />)
+  const [showModal, setShowModal] = useState(false);
+  const onClickProductHandler = (item) => {
+    setShowModal(prevState => !prevState);
+  }
+  const products = PRODUCTS.map((item, index) => <Product key={index} item={item} onClick={onClickProductHandler} />);
 
   return (
     <Wrapper>
-      <Modal />
+      { showModal && <Modal onClose={onClickProductHandler} /> }
       <div className={styles.products}>{products}</div>
     </Wrapper>
   )
