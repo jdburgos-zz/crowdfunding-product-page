@@ -1,6 +1,8 @@
+@import "src/styles/settings/variables";
+
 .card {
   border-radius: 10px;
-  padding: 20px 20px 40px;
+  padding: 30px 20px 40px;
   position: relative;
   background-color: var(--c-white);
 
@@ -10,5 +12,9 @@
 
   &--light {
     border: 1px solid var(--c-light-gray);
+  }
+
+  @media only screen and (min-width: $b-medium) {
+    padding: 30px 40px 40px;
   }
 }
