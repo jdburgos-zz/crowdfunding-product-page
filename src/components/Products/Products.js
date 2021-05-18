@@ -1,5 +1,7 @@
 /** Components **/
 import Product from '../Product/Product';
+import Wrapper from '../helpers/Wrapper/Wrapper';
+import Modal from '../ui/Modal/Modal';
 
 /** Styles **/
 import styles from './Products.module.scss';
@@ -28,7 +30,12 @@ const PRODUCTS = [
 const Products = () => {
   const products = PRODUCTS.map((item, index) => <Product key={index} item={item} />)
 
-  return <div className={styles.products}>{products}</div>
+  return (
+    <Wrapper>
+      <Modal />
+      <div className={styles.products}>{products}</div>
+    </Wrapper>
+  )
 };
 
 export default Products;
