@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/crowdfunding-product-page/static/css/main.ac561a35.chunk.css",
-    "main.js": "/crowdfunding-product-page/static/js/main.5bf0bf06.chunk.js",
-    "main.js.map": "/crowdfunding-product-page/static/js/main.5bf0bf06.chunk.js.map",
+    "main.css": "/crowdfunding-product-page/static/css/main.163d2377.chunk.css",
+    "main.js": "/crowdfunding-product-page/static/js/main.57922a9d.chunk.js",
+    "main.js.map": "/crowdfunding-product-page/static/js/main.57922a9d.chunk.js.map",
     "runtime-main.js": "/crowdfunding-product-page/static/js/runtime-main.fa17b275.js",
     "runtime-main.js.map": "/crowdfunding-product-page/static/js/runtime-main.fa17b275.js.map",
     "static/js/2.19c7c346.chunk.js": "/crowdfunding-product-page/static/js/2.19c7c346.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.43de0742.chunk.js": "/crowdfunding-product-page/static/js/3.43de0742.chunk.js",
     "static/js/3.43de0742.chunk.js.map": "/crowdfunding-product-page/static/js/3.43de0742.chunk.js.map",
     "index.html": "/crowdfunding-product-page/index.html",
-    "static/css/main.ac561a35.chunk.css.map": "/crowdfunding-product-page/static/css/main.ac561a35.chunk.css.map",
+    "static/css/main.163d2377.chunk.css.map": "/crowdfunding-product-page/static/css/main.163d2377.chunk.css.map",
     "static/js/2.19c7c346.chunk.js.LICENSE.txt": "/crowdfunding-product-page/static/js/2.19c7c346.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fa17b275.js",
     "static/js/2.19c7c346.chunk.js",
-    "static/css/main.ac561a35.chunk.css",
-    "static/js/main.5bf0bf06.chunk.js"
+    "static/css/main.163d2377.chunk.css",
+    "static/js/main.57922a9d.chunk.js"
   ]
 }
