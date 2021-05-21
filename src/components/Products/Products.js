@@ -39,7 +39,7 @@ const Products = () => {
     quantity: null
   });
 
-  const onClickProductHandler = (item) => {
+  const onClickProductHandler = item => {
     setProductSelected(item);
     setShowModal(prevState => !prevState);
   };

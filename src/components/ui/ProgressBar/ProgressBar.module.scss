@@ -1,0 +1,11 @@
+.progress-bar {
+  height: 15px;
+  border-radius: 20px;
+  background-color: var(--c-lighten-gray);
+
+  &__control {
+    height: 15px;
+    border-radius: 20px;
+    background-color: var(--c-modarate-cyan);
+  }
+}

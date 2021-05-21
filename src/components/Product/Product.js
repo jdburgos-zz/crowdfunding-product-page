@@ -5,7 +5,7 @@ import Button from '../ui/Button/Button';
 /** Styles **/
 import styles from './Product.module.scss';
 
-const Product = (props) => {
+const Product = props => {
   const { title, price, description ,quantity } = props.product;
   const disable = quantity <= 0;
   const disableClass = disable ? styles[`product--disable`] : '';

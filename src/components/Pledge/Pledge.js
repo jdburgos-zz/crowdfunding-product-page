@@ -1,5 +1,5 @@
 /** React core **/
-import { useRef, useState } from 'react';
+import { useContext, useRef, useState } from 'react';
 
 /** Components **/
 import Card from '../ui/Card/Card';
@@ -10,8 +10,10 @@ import Modal from '../ui/Modal/Modal';
 
 /** Styles **/
 import styles from './Pledge.module.scss';
+import ProjectContext from '../../store/ProjectContext';
 
 const Pledge = props => {
+  const projectCtx = useContext(ProjectContext);
   const priceRef = useRef();
   const [showContinueModal, setShowContinueModal] = useState(false);
   const [error, setError] = useState(false);
@@ -29,6 +31,8 @@ const Pledge = props => {
 
   const continueHandler = () => {
     showContinueModalHandler();
+    projectCtx.incrementTotalPledge(+priceRef.current.value);
+    projectCtx.incrementTotalBackers(1);
   };
 
   const showContinueModalHandler = () => {

@@ -6,6 +6,9 @@ import Container from './components/layout/Container/Container';
 import About from './components/sections/About/About';
 import Wrapper from './components/helpers/Wrapper/Wrapper';
 
+/** Providers **/
+import ProjectProvider from './store/ProjectProvider';
+
 /** Styles **/
 import './styles/styles.scss';
 
@@ -13,9 +16,11 @@ const App = () => (
   <Wrapper>
     <Header />
     <Container>
-      <Description />
-      <Amounts />
-      <About />
+      <ProjectProvider>
+        <Description />
+        <Amounts />
+        <About />
+      </ProjectProvider>
     </Container>
   </Wrapper>
 
