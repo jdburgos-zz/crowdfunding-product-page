@@ -2,8 +2,9 @@
 
 .product {
   &__modal {
-    &__title {
+    &-title {
       text-align: center;
+      margin-top: 0;
     }
 
     &-description {
@@ -17,6 +18,7 @@
     display: flex;
     align-items: center;
     line-height: .8;
+    justify-content: center;
 
     &-number {
       font-weight: 700;
