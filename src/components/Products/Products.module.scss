@@ -1,3 +1,32 @@
-.products {
+@import "src/styles/settings/variables";
 
+.product {
+  &__modal {
+    &__title {
+      text-align: center;
+    }
+
+    &-description {
+      color: var(--c-dark-gray);
+      line-height: 1.5;
+    }
+  }
+
+  &__quantity {
+    color: var(--c-dark-gray);
+    display: flex;
+    align-items: center;
+    line-height: .8;
+
+    &-number {
+      font-weight: 700;
+      color: var(--c-black);
+      font-size: 2rem;
+      margin-right: 10px;
+    }
+
+    @media only screen and (min-width: $b-medium) {
+      margin-bottom: 0;
+    }
+  }
 }

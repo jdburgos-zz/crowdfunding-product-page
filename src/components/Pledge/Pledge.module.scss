@@ -1,0 +1,134 @@
+@import "src/styles/settings/variables";
+
+.pledge {
+  $pledge: &;
+
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: block;
+
+  &:hover {
+    #{$pledge}__title {
+      color: var(--c-modarate-cyan);
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__description {
+    margin-left: 22px;
+    margin-top: 5px;
+    color: var(--c-modarate-cyan);
+    font-weight: 500;
+  }
+
+  &__radio {
+    margin-right: 10px;
+  }
+
+  &__title {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 700;
+  }
+
+  &__content {
+    color: var(--c-dark-gray);
+    font-size: .9rem;
+    line-height: 1.5;
+  }
+
+  &__quantity {
+    color: var(--c-dark-gray);
+    display: flex;
+    align-items: center;
+    line-height: .8;
+
+    &-number {
+      font-weight: 700;
+      color: var(--c-black);
+      font-size: 1.1rem;
+      margin-right: 10px;
+    }
+
+    @media only screen and (min-width: $b-medium) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__footer {
+    margin-top: 2em;
+    border-top: 1px solid var(--c-light-gray);
+    padding-top: 2em;
+
+    &-text {
+      text-align: center;
+      display: block;
+      color: var(--c-dark-gray);
+      font-size: .9rem;
+      margin-bottom: 1em;
+    }
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-input {
+      width: 45%;
+      margin-right: 5%;
+      position: relative;
+
+      &-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+        color: var(--c-dark-gray);
+      }
+
+      &-control {
+        width: calc(100% - 62px);
+        text-align: center;
+      }
+    }
+
+    &-btn {
+      z-index: 10;
+    }
+  }
+}
+
+.continue {
+  &__modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-title {
+      font-size: 1.4rem;
+    }
+
+    &-description {
+      color: var(--c-dark-gray);
+      font-size: .9rem;
+      line-height: 1.5;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}

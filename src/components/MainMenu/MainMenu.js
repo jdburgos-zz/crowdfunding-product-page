@@ -6,8 +6,12 @@ import styles from './MainMenu.module.scss';
 
 const MainMenu = () => {
   const [showMainMenu, setShowMainMenu] = useState(false);
+  const [showMenuIcon, setShowMenuIcon] = useState(true);
+  const [showCloseMenuIcon, setShowCloseMenuIcon] = useState(false);
 
   const toggleMenuHandler = () => {
+    setShowMenuIcon(prevState => !prevState);
+    setShowCloseMenuIcon(prevState => !prevState);
     setShowMainMenu(prevState => !prevState);
   };
 
@@ -31,14 +35,20 @@ const MainMenu = () => {
     </nav>
   );
 
+  const menuIcon = <img className={ styles['main-menu__icon'] }
+                        src={ `${ process.env.PUBLIC_URL }/images/icon-hamburger.svg` } alt="menu icon"
+                        onClick={ toggleMenuHandler } />
+
+  const closeMenuIcon = <img className={ styles['main-menu__icon'] }
+                        src={ `${ process.env.PUBLIC_URL }/images/icon-close-menu.svg` } alt="close menu icon"
+                        onClick={ toggleMenuHandler } />
+
   return (
     <div className={ styles['main-menu'] }>
-      <img className={ styles['main-menu__icon'] }
-           src={ `${ process.env.PUBLIC_URL }/images/icon-hamburger.svg` }
-           alt="menu icon"
-           onClick={toggleMenuHandler} />
-      {showMainMenu && menu}
-      {menuDesktop}
+      { showMenuIcon && menuIcon }
+      { showCloseMenuIcon && closeMenuIcon }
+      { showMainMenu && menu }
+      { menuDesktop }
     </div>
   );
 };

@@ -6,7 +6,7 @@ import Button from '../ui/Button/Button';
 import styles from './Product.module.scss';
 
 const Product = (props) => {
-  const { title, price, description ,quantity } = props.item;
+  const { title, price, description ,quantity } = props.product;
   const disable = quantity <= 0;
   const disableClass = disable ? styles[`product--disable`] : '';
   const btnText = disable ? 'Out of Stock' : 'Select Reward';
@@ -21,7 +21,7 @@ const Product = (props) => {
         <div className={styles['product__description']}>{description}</div>
         <div className={styles['product__footer']}>
           <div className={styles['product__quantity']}><span className={styles['product__quantity-number']}>{quantity}</span> left</div>
-          <Button onClick={props.onClick.bind(null, props.item)} disable={disable}>{btnText}</Button>
+          <Button onClick={props.onClick.bind(null, props.product)} disable={disable}>{btnText}</Button>
         </div>
       </Card>
     </div>

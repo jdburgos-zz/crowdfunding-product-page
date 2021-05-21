@@ -6,6 +6,7 @@ import Button from '../../ui/Button/Button';
 import Card from '../../ui/Card/Card';
 import Modal from '../../ui/Modal/Modal';
 import Wrapper from '../../helpers/Wrapper/Wrapper';
+import Pledge from '../../Pledge/Pledge';
 
 /** Styles **/
 import styles from './Description.module.scss';
@@ -40,39 +41,22 @@ const PRODUCTS = [
 const Description = () => {
   const [showModal, setShowModal] = useState(false);
 
-  const onClickDescriptionHandler = () => {
+  const clickDescriptionHandler = () => {
     setShowModal(prevState => !prevState);
   }
 
-  const products = PRODUCTS.map((product, index) => (
-    <label key={index} htmlFor={index} className={styles['description__product']}>
-      <Card borderColor='light'>
-        <div className={styles['description__product-header']}>
-          <input id={index} name="product" className={styles['description__product-radio']} type="radio" />
-          <h3 className={styles['description__product-title']}>{product.title}</h3>
-        </div>
-        <p className={styles['description__product-content']}>{product.description}</p>
-        <div className={styles['description__product-footer']}>
-          <span className={styles['description__product-footer-text']}>Enter your pledge</span>
-          <div className={styles['description__product-footer-content']}>
-            <input type="text" />
-            <Button>Continue</Button>
-          </div>
-        </div>
-      </Card>
-    </label>
-  ));
+  const pledges = PRODUCTS.map((pledge, index) => (<Pledge onContinue={clickDescriptionHandler} key={index} id={index} product={pledge} />));
 
   const modal = (
-    <Modal onClose={onClickDescriptionHandler}>
+    <Modal onClose={clickDescriptionHandler}>
       <div className={styles['description__modal']}>
         <div className={styles['description__modal-header']}>
           <h2 className={styles['description__modal-title']}>Back this project</h2>
-          <img onClick={onClickDescriptionHandler} className={ styles['description__modal-close'] }
+          <img onClick={clickDescriptionHandler} className={ styles['description__modal-close'] }
                src={ `${ process.env.PUBLIC_URL }/images/icon-close-modal.svg` } alt="close modal" />
         </div>
         <p className={styles['description__modal-description']}>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
-        <div className={styles['description__modal-content']}>{products}</div>
+        <div className={styles['description__modal-content']}>{pledges}</div>
       </div>
     </Modal>
   );
@@ -88,7 +72,7 @@ const Description = () => {
           <p
             className={ styles['description__content'] }>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
           <div className={ styles['description__footer'] }>
-            <Button onClick={onClickDescriptionHandler}>Back this project</Button>
+            <Button onClick={clickDescriptionHandler}>Back this project</Button>
             <div className={ styles['description__bookmark'] }>
               <img className={ styles['description__bookmark-img'] }
                    src={ `${ process.env.PUBLIC_URL }/images/icon-bookmark.svg` } alt="bookmark" />
