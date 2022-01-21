@@ -1,10 +1,10 @@
-@import "src/styles/settings/variables";
+@import 'src/styles/settings/variables';
 
 .product {
   &__modal {
     &-title {
-      text-align: center;
       margin-top: 0;
+      text-align: center;
     }
 
     &-description {
@@ -14,16 +14,16 @@
   }
 
   &__quantity {
+    align-items: center;
     color: var(--c-dark-gray);
     display: flex;
-    align-items: center;
-    line-height: .8;
     justify-content: center;
+    line-height: 0.8;
 
     &-number {
-      font-weight: 700;
       color: var(--c-black);
       font-size: 2rem;
+      font-weight: 700;
       margin-right: 10px;
     }
 

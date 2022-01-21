@@ -1,9 +1,9 @@
 .input {
-  border-radius: 30px;
-  padding: 15px 30px;
   border: 1px solid var(--c-light-gray);
-  outline: none;
+  border-radius: 30px;
   font-weight: 700;
+  outline: none;
+  padding: 15px 30px;
 
   &.error {
     border: 1px solid var(--c-red);
@@ -13,7 +13,7 @@
     border: 1px solid var(--c-modarate-cyan);
   }
 
-  &[type="number"] {
+  &[type='number'] {
     &::-webkit-inner-spin-button,
     &::-webkit-outer-spin-button {
       display: none;

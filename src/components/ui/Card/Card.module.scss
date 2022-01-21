@@ -1,10 +1,10 @@
-@import "src/styles/settings/variables";
+@import 'src/styles/settings/variables';
 
 .card {
+  background-color: var(--c-white);
   border-radius: 10px;
   padding: 30px 20px 40px;
   position: relative;
-  background-color: var(--c-white);
 
   &--lighten {
     border: 1px solid var(--c-lighten-gray);

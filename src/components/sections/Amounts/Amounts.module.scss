@@ -1,12 +1,12 @@
-@import "src/styles/settings/variables";
+@import 'src/styles/settings/variables';
 
 .amounts {
   margin-bottom: 20px;
 
   &__container {
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 
     @media only screen and (min-width: $b-medium) {
       flex-direction: row;
@@ -15,46 +15,46 @@
   }
 
   &__item {
-    text-align: center;
     margin-bottom: 50px;
     position: relative;
+    text-align: center;
 
-    &:after {
-      content: '';
-      width: 100px;
-      height: 1px;
+    &::after {
       background-color: var(--c-light-gray);
-      display: block;
-      position: absolute;
       bottom: -25px;
+      content: '';
+      display: block;
+      height: 1px;
       left: 50%;
+      position: absolute;
       transform: translateX(-50%);
+      width: 100px;
 
       @media only screen and (min-width: $b-medium) {
-        left: initial;
-        width: 1px;
-        height: 57px;
-        right: 50px;
         bottom: 0;
+        height: 57px;
+        left: initial;
+        right: 50px;
+        width: 1px;
       }
     }
 
     &:last-child {
       margin-bottom: 0;
 
-      &:after {
+      &::after {
         display: none;
       }
     }
 
     &-title {
-      margin: 0 0 .33em;
       font-size: 1.7rem;
+      margin: 0 0 0.33em;
     }
 
     &-text {
       color: var(--c-dark-gray);
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
 
     @media only screen and (min-width: $b-medium) {

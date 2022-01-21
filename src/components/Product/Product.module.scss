@@ -1,11 +1,11 @@
-@import "src/styles/settings/variables";
+@import 'src/styles/settings/variables';
 
 .product {
   margin-bottom: 25px;
 
   &--disable {
-    opacity: .5;
     cursor: not-allowed;
+    opacity: 0.5;
   }
 
   &:last-child {
@@ -20,9 +20,9 @@
   }
 
   &__title {
+    font-size: 0.9rem;
+    margin-bottom: 0.8em;
     margin-top: 0;
-    font-size: .9rem;
-    margin-bottom: .8em;
   }
 
   &__price {
@@ -38,23 +38,23 @@
 
   &__footer {
     @media only screen and (min-width: $b-medium) {
+      align-items: center;
       display: flex;
       justify-content: space-between;
-      align-items: center;
     }
   }
 
   &__quantity {
-    color: var(--c-dark-gray);
-    margin-bottom: 30px;
-    display: flex;
     align-items: center;
-    line-height: .8;
+    color: var(--c-dark-gray);
+    display: flex;
+    line-height: 0.8;
+    margin-bottom: 30px;
 
     &-number {
-      font-weight: 700;
       color: var(--c-black);
       font-size: 2rem;
+      font-weight: 700;
       margin-right: 10px;
     }
 

@@ -1,40 +1,40 @@
-@import "src/styles/settings/variables";
+@import 'src/styles/settings/variables';
 
 .description {
   margin-bottom: 20px;
 
   &__logo {
-    transform: translateX(-50%);
-    position: absolute;
     left: 50%;
+    position: absolute;
     top: -27px;
+    transform: translateX(-50%);
   }
 
   &__title {
-    text-align: center;
     font-size: 1.2rem;
-    margin: 1.8em 0 .67em;
+    margin: 1.8em 0 0.67em;
+    text-align: center;
   }
 
   &__content {
-    text-align: center;
     color: var(--c-dark-gray);
-    font-size: .9rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     margin: 1em 0 1.8em;
+    text-align: center;
   }
 
   &__footer {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
   }
 
   &__modal {
     &-header {
+      align-items: center;
       display: flex;
       justify-content: space-between;
-      align-items: center;
       margin-bottom: 20px;
     }
 
@@ -48,7 +48,7 @@
 
     &-description {
       color: var(--c-dark-gray);
-      font-size: .9rem;
+      font-size: 0.9rem;
       line-height: 1.5;
       margin-bottom: 20px;
     }
@@ -57,9 +57,9 @@
   &__bookmark {
     $bookmark: &;
 
-    display: flex;
     align-items: center;
     cursor: pointer;
+    display: flex;
     max-width: 177px;
 
     &.active {
@@ -76,12 +76,12 @@
       display: none;
 
       @media only screen and (min-width: $b-medium) {
-        display: block;
-        border-radius: 30px;
-        padding: 20px 30px 20px 70px;
-        color: var(--c-dark-gray);
-        font-weight: 700;
         background-color: var(--c-lighten-gray);
+        border-radius: 30px;
+        color: var(--c-dark-gray);
+        display: block;
+        font-weight: 700;
+        padding: 20px 30px 20px 70px;
         transform: translateX(-58px);
       }
     }

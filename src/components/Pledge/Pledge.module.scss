@@ -1,11 +1,11 @@
-@import "src/styles/settings/variables";
+@import 'src/styles/settings/variables';
 
 .pledge {
   $pledge: &;
 
   cursor: pointer;
-  margin-bottom: 20px;
   display: block;
+  margin-bottom: 20px;
 
   &:hover {
     #{$pledge}__title {
@@ -18,20 +18,20 @@
   }
 
   &.disabled {
-    opacity: .5;
     cursor: not-allowed;
+    opacity: 0.5;
   }
 
   &__header {
-    display: flex;
     align-items: center;
+    display: flex;
   }
 
   &__description {
-    margin-left: 22px;
-    margin-top: 5px;
     color: var(--c-modarate-cyan);
     font-weight: 500;
+    margin-left: 22px;
+    margin-top: 5px;
   }
 
   &__radio {
@@ -40,26 +40,26 @@
 
   &__title {
     font-size: 1rem;
-    margin: 0;
     font-weight: 700;
+    margin: 0;
   }
 
   &__content {
     color: var(--c-dark-gray);
-    font-size: .9rem;
+    font-size: 0.9rem;
     line-height: 1.5;
   }
 
   &__quantity {
+    align-items: center;
     color: var(--c-dark-gray);
     display: flex;
-    align-items: center;
-    line-height: .8;
+    line-height: 0.8;
 
     &-number {
-      font-weight: 700;
       color: var(--c-black);
       font-size: 1.1rem;
+      font-weight: 700;
       margin-right: 10px;
     }
 
@@ -69,40 +69,40 @@
   }
 
   &__footer {
-    margin-top: 2em;
     border-top: 1px solid var(--c-light-gray);
+    margin-top: 2em;
     padding-top: 2em;
 
     &-text {
-      text-align: center;
-      display: block;
       color: var(--c-dark-gray);
-      font-size: .9rem;
+      display: block;
+      font-size: 0.9rem;
       margin-bottom: 1em;
+      text-align: center;
     }
 
     &-content {
+      align-items: center;
       display: flex;
       justify-content: space-between;
-      align-items: center;
     }
 
     &-input {
-      width: 45%;
       margin-right: 5%;
       position: relative;
+      width: 45%;
 
       &-icon {
+        color: var(--c-dark-gray);
+        left: 15px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 15px;
-        color: var(--c-dark-gray);
       }
 
       &-control {
-        width: calc(100% - 62px);
         text-align: center;
+        width: calc(100% - 62px);
       }
     }
 
@@ -114,9 +114,9 @@
 
 .continue {
   &__modal {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 
     &-title {
@@ -125,10 +125,10 @@
 
     &-description {
       color: var(--c-dark-gray);
-      font-size: .9rem;
+      font-size: 0.9rem;
       line-height: 1.5;
-      text-align: center;
       margin-bottom: 20px;
+      text-align: center;
     }
   }
 }
