@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/crowdfunding-product-page/static/css/main.b552ad36.chunk.css",
+    "main.css": "/crowdfunding-product-page/static/css/main.17b623ed.chunk.css",
     "main.js": "/crowdfunding-product-page/static/js/main.8958daaf.chunk.js",
     "main.js.map": "/crowdfunding-product-page/static/js/main.8958daaf.chunk.js.map",
     "runtime-main.js": "/crowdfunding-product-page/static/js/runtime-main.d9274727.js",
@@ -10,13 +10,13 @@
     "static/js/3.625f5e2a.chunk.js": "/crowdfunding-product-page/static/js/3.625f5e2a.chunk.js",
     "static/js/3.625f5e2a.chunk.js.map": "/crowdfunding-product-page/static/js/3.625f5e2a.chunk.js.map",
     "index.html": "/crowdfunding-product-page/index.html",
-    "static/css/main.b552ad36.chunk.css.map": "/crowdfunding-product-page/static/css/main.b552ad36.chunk.css.map",
+    "static/css/main.17b623ed.chunk.css.map": "/crowdfunding-product-page/static/css/main.17b623ed.chunk.css.map",
     "static/js/2.3d5ecd7a.chunk.js.LICENSE.txt": "/crowdfunding-product-page/static/js/2.3d5ecd7a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d9274727.js",
     "static/js/2.3d5ecd7a.chunk.js",
-    "static/css/main.b552ad36.chunk.css",
+    "static/css/main.17b623ed.chunk.css",
     "static/js/main.8958daaf.chunk.js"
   ]
 }
