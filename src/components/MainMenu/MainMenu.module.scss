@@ -21,8 +21,8 @@
     background: var(--c-white);
     border-radius: 10px;
     box-shadow: 0 38px 67px 3px rgb(0 0 0 / 70%);
-    box-shadow: 0 38px 67px 3px rgb(0 0 0 / 70%);
-    box-shadow: 0 38px 67px 3px rgb(0 0 0 / 70%);
+    -webkit-box-shadow: 0 38px 67px 3px rgb(0 0 0 / 70%);
+    -moz-box-shadow: 0 38px 67px 3px rgb(0 0 0 / 70%);
     position: absolute;
     top: 55px;
     width: 100%;
